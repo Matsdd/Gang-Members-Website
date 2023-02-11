@@ -1,4 +1,11 @@
+@font-face {
+  font-family: 'Engravers';
+  src: url("fonts/ENGR.ttf");
+}
+
 body {
+  font-family: 'Engravers';
+  font-weight: bold;
   background: #1B1B1B;
   background-size: cover;
   padding: 0;
@@ -13,6 +20,15 @@ header {
   align-items: center;
 }
 
+.link {
+  text-decoration: none;
+  color: #532cb0;
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
 .image {
   width: 25vw;
 } 
@@ -21,15 +37,32 @@ header {
   width: 5vw;
 }
 
-/* Dropdown Button */
-.dropbtn {
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Engravers';
+  font-weight: bold;
     background-color: #1B1B1B;
     font-weight: bold;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 4vw;
+    color: #AE8CFF;
+    font-size: 1.1vw;  
+}
+
+/* Dropdown Button */
+.dropbtn {
+  font-family: 'Engravers';
+  font-weight: bold;
+    background-color: #1B1B1B;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 4vw;
     color: #AE8CFF;
     padding: 16px;
-    font-size: 16px;
+    font-size: 2vw;
     border: none;
   }
   
@@ -59,6 +92,7 @@ header {
   
   /* Links inside the dropdown */
   .dropdown-content a {
+    font-family: 'Engravers';
     font-weight: bold;
     text-decoration: none;
     font-size: 2vw;
@@ -69,13 +103,14 @@ header {
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {border-color: #C4BBAF;}
+  .dropdown-content a:hover {text-decoration: underline;}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {border-color: #C4BBAF;
+    font-family: 'Engravers';
     text-decoration: underline;
     color: #AE8CFF;}
   
@@ -106,26 +141,25 @@ header {
 .bodyitems {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1vw;
 }
 
-.rightrow {
-  display: flex;
-  flex-direction: column;
-}
 
 .box{
-  margin: 3vw;
-  border: 5px solid #272727;
-  background-color: #1B1B1B;
+  font-family: 'Engravers';
   font-weight: bold;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: #AE8CFF;
-  padding: 16px;
-  font-size: 16px;
+  text-align: center;
+  padding: 2vw;
+  margin: 1vw;
+  border: 5px solid #272727;
+  background-color: #1B1B1B;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 
@@ -133,8 +167,112 @@ header {
   width: 50vw;
 }
 
+.motmYearContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.motm2023 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: 'Engravers';
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: #AE8CFF;
+  text-align: center;
+}
+
+.month {
+  font-family: 'Engravers';
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: #AE8CFF;
+  text-align: center;
+  padding: 1vw;
+  margin: 1vw;
+  border: 5px solid #272727;
+  background-color: #1B1B1B;
+  display: flex;
+  flex-direction: column;
+}
+
+.motmimg {
+  margin: 1vw;
+  border: 5px solid #272727;
+  background-color: #1B1B1B;
+}
+
+h1 {
+  font-family: 'Engravers';
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2vw;
+  margin: 0.5vw;
+  color: #AE8CFF;
+}
+
+.photogallery {
+  border-top: 5px solid #272727;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.phimg {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+
+
 footer {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
+  font-family: 'Engravers';
+  border-top: 5px solid #272727;
+  background-color: #1B1B1B;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2vw;
+  color: #AE8CFF;
+  padding: 2vw;
+  font-size: 2vw;
 }
+
+  @media (max-width: 600px) {
+    body {
+      flex-direction: column;
+    }
+    header {
+      display: flex;
+ 
+      flex-direction: column;
+    }
+      .images {
+      width: auto;
+      }
+      img {
+        max-width: 400px;
+        max-height: 250px;
+      }
+      .kast,.spelregels,.eindmarkt {
+        font-size: 30px;
+        font-weight: bold;
+        color: #239636;
+        background-color: #EBFFE5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    
+        margin: 50px;
+        border: 5px solid green;
+      }
+
+    }
