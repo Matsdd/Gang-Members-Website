@@ -146,6 +146,25 @@ h2 {
   margin: 1vw;
 }
 
+.bigbox{
+  font-family: 'Engravers';
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: #AE8CFF;
+  text-align: center;
+  padding: 1vw;
+  margin: 1vw;
+  border: 5px solid #272727;
+  background-color: #1B1B1B;
+  display: flex;
+  flex-direction: column;
+}
+
+.ytvid{
+  width: 80vw;
+  height: 35vw;
+}
 
 .box{
   font-family: 'Engravers';
@@ -154,14 +173,13 @@ h2 {
   font-size: 1.5vw;
   color: #AE8CFF;
   text-align: center;
-  padding: 2vw;
+  padding: 1vw;
   margin: 1vw;
   border: 5px solid #272727;
   background-color: #1B1B1B;
   display: flex;
   flex-direction: column;
 }
-
 
 .fullimage {
   width: 50vw;
@@ -228,7 +246,13 @@ h1 {
   margin-bottom: 1vw;
 }
 
+.galleryimg {
+  width: 40vw;
+}
 
+.findusimg {
+  width: 15vw;
+}
 
 footer {
   display: flex;
@@ -249,30 +273,54 @@ footer {
     body {
       flex-direction: column;
     }
+
     header {
       display: flex;
- 
       flex-direction: column;
     }
-      .images {
-      width: auto;
-      }
-      img {
-        max-width: 400px;
-        max-height: 250px;
-      }
-      .kast,.spelregels,.eindmarkt {
-        font-size: 30px;
-        font-weight: bold;
-        color: #239636;
-        background-color: #EBFFE5;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-    
-        margin: 50px;
-        border: 5px solid green;
-      }
 
-    }
+    .image {
+      width: 75vw;
+    } 
+    
+    .siteLogo {
+      width: 20vw;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  .dropbtn {
+    font-size: 4vw;
+  }
+    
+  .dropdown-content {
+    min-width: 0px;
+  }
+    
+  .dropdown-content a {
+    font-size: 0vw;
+  }
+
+  .galleryimg {
+    width: 80vw;
+  }
+
+  .motmimg {
+    width: 35vw;
+  }
+
+  .findusimg {
+    width: 35vw;
+  }
+
+  footer {
+    font-size: 5vw;
+  }
+
+  }
